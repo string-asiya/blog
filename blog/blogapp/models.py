@@ -7,5 +7,9 @@ class Post(models.Model):
 	content=models.CharField(max_length=1000)
 	image=models.ImageField(upload_to='profile_image', blank=True, null=True)
 
+class Comment(models.Model):
+	Name=models.CharField(max_length=100)
+	Comment=models.CharField(max_length=100)
+
 
 # Create your models here.
